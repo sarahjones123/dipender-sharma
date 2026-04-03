@@ -1,11 +1,11 @@
 site_name: Documentation Automation Examples
 site_description: AI-assisted documentation projects for technical writers
 site_author: Dipender Sharma
-site_url: https://github.com/sarahjones123/docs-automation-examples/
+site_url: https://github.com/sarahjones123/dipender-sharma
 
-# repo_name: docs-automation-examples
-# repo_url: https://github.com/rebeja/docs-automation-examples
-# edit_uri: edit/main/docs/
+repo_name: dipender-sharma
+repo_url: https://github.com/sarahjones123/dipender-sharma
+edit_uri: edit/main/docs/
 
 theme:
   name: material
