@@ -93,6 +93,24 @@ nav:
     - Welcome: index.md
     - Building the knowledgebase: ngenue_kb.md
 
+
+  - Mkdocs:
+    - mkdocs/index.md
+    - Introduction: mkdocs/01-introduction.md
+    - Prerequisites: mkdocs/02-prerequisites.md
+    - Installation: mkdocs/03-installation.md
+    - Project setup: mkdocs/04-project-setup.md
+    - Writing content: mkdocs/05-writing-content.md
+    - Configuration: mkdocs/06-configuration.md
+    - Theming-material: mkdocs/07-theming-material.md
+    - Navigation structure: mkdocs/08-navigation-structure.md
+    - Plugins: mkdocs/09-plugins.md
+    - Local development: mkdocs/10-local-development.md
+    - Deployment via GitHub pages: mkdocs/11-deployment-github-pages.md
+    - CI/CD automation: mkdocs/12-ci-cd-automation.md
+    - Best Practices: mkdocs/13-best-practices.md
+  
+  
   - Git and GitHub: 
     - git/index.md
     - Why Git and GitHub matters: git/introduction.md
