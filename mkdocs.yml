@@ -89,12 +89,25 @@ extra:
             Thanks for your feedback!
 
 nav:
-  - Home: index.md
-  - About: about.md
+  - Home: 
+    - Welcome: index.md
+    - Building the knowledgebase: ngenue_kb.md
+
+  - Git and GitHub: 
+    - git/index.md
+    - Why Git and GitHub matters: git/introduction.md
+    - Part 1 — Git Basics: git/part-1-git-basics.md
+    - Part 2 — Git vs GitHub: git/part-2-git-vs-github.md
+    - Part 3 — Managing Versions: git/part-3-versioning.md
+    - Part 4 — Pull Requests: git/part-4-pull-requests.md
+    - Part 5 — CI/CD Pipelines: git/part-5-cicd-pipelines.md
+    - Part 6 — Documentation Architecture: git/part-6-repo-architecture.md
+
   - API Docs: api.md
-  - Automation: automation.md
-  - API Docs:
-    - Generated: api/generated.md
+  - Automation: 
+    - automation.md
+    - API Docs generated: api/generated.md
+
 
 extra_css:
   - stylesheets/extra.css

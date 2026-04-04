@@ -1,0 +1,404 @@
+/* ============================================================
+   BRAND STYLESHEET — Douglas Ebhoman
+   Navy: #18222C | Gold: #A68959 | Silver: #B8C0CC
+   Fonts: DM Mono + Lora
+============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+/* ── Colour tokens ─────────────────────────────────────────── */
+:root,
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:           #A68959;
+  --md-primary-fg-color--light:    #C9A96E;
+  --md-primary-fg-color--dark:     #8C7248;
+  --md-accent-fg-color:            #A68959 !important;
+  --md-accent-bg-color:            rgba(166,137,89,0.1) !important;
+  --md-default-bg-color:           #18222C !important;
+  --md-default-bg-color--light:    #1B2632 !important;
+  --md-default-bg-color--lighter:  #1E2935 !important;
+  --md-default-bg-color--lightest: #232E3D !important;
+  --md-default-fg-color:           #E8E6E1;
+  --md-default-fg-color--light:    #B8C0CC;
+  --md-default-fg-color--lighter:  #8892A4;
+  --md-default-fg-color--lightest: #4A5568;
+  --md-code-bg-color:              #1E2935;
+  --md-code-fg-color:              #E8E6E1;
+  --md-typeset-color:              #E8E6E1;
+  --md-typeset-a-color:            #A68959;
+}
+
+/* ── Background containers ─────────────────────────────────── */
+body,
+.md-container,
+.md-sidebar,
+.md-sidebar__inner,
+.md-sidebar__scrollwrap {
+  background-color: #18222C !important;
+}
+
+.md-main,
+.md-main__inner {
+  background-color: #1B2632 !important;
+}
+
+.md-content,
+.md-content__inner {
+  background-color: #1B2632 !important;
+}
+
+/* ── Typography ────────────────────────────────────────────── */
+body,
+.md-typeset {
+  font-family: 'Lora', Georgia, serif !important;
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+  color: #E8E6E1 !important;
+}
+
+.md-typeset code,
+.md-typeset pre,
+.md-header__title,
+.md-nav__title,
+.md-nav__link,
+.md-tabs__link,
+.md-search__input {
+  font-family: 'DM Mono', 'Courier New', monospace !important;
+}
+
+/* ── Header ────────────────────────────────────────────────── */
+.md-header,
+.md-header[data-md-state] {
+  background-color: #18222C !important;
+  border-bottom: 1px solid rgba(166,137,89,0.3) !important;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.5) !important;
+}
+
+.md-header__title {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em !important;
+  color: #E8E6E1 !important;
+}
+
+/* ── Navigation tabs ───────────────────────────────────────── */
+.md-tabs {
+  background-color: #1B2632 !important;
+  border-bottom: 1px solid rgba(166,137,89,0.2) !important;
+}
+
+.md-tabs__link {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #8892A4 !important;
+  opacity: 1 !important;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  color: #A68959 !important;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────── */
+.md-nav__title {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.68rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #A68959 !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid rgba(166,137,89,0.2) !important;
+  background-color: transparent !important;
+}
+
+.md-nav__link {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.03em !important;
+  color: #8892A4 !important;
+  transition: color 0.2s ease !important;
+}
+
+.md-nav__link:hover {
+  color: #B8C0CC !important;
+}
+
+.md-nav__link--active,
+.md-nav__link--active:hover {
+  color: #A68959 !important;
+  font-weight: 500 !important;
+}
+
+/* ── Headings ──────────────────────────────────────────────── */
+.md-typeset h1 {
+  font-family: 'Lora', serif !important;
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  color: #E8E6E1 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.25 !important;
+  border-bottom: 1px solid rgba(166,137,89,0.3) !important;
+  padding-bottom: 0.75rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.md-typeset h2 {
+  font-family: 'Lora', serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  color: #A68959 !important;
+  letter-spacing: -0.015em !important;
+  margin-top: 2.5rem !important;
+  padding-bottom: 0.3rem !important;
+  border-bottom: 1px solid rgba(166,137,89,0.15) !important;
+}
+
+.md-typeset h3 {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #B8C0CC !important;
+  margin-top: 2rem !important;
+}
+
+.md-typeset h4 {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #8892A4 !important;
+}
+
+/* ── Body text ─────────────────────────────────────────────── */
+.md-typeset p {
+  color: #B8C0CC !important;
+  line-height: 1.85 !important;
+}
+
+.md-typeset strong {
+  color: #E8E6E1 !important;
+  font-weight: 600 !important;
+}
+
+.md-typeset em {
+  color: #C9A96E !important;
+}
+
+/* ── Lists ─────────────────────────────────────────────────── */
+.md-typeset ul,
+.md-typeset ol {
+  color: #B8C0CC !important;
+}
+
+.md-typeset ul li,
+.md-typeset ol li {
+  color: #B8C0CC !important;
+}
+
+.md-typeset ul li::marker {
+  color: #A68959 !important;
+}
+
+.md-typeset ol li::marker {
+  color: #A68959 !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.85em !important;
+}
+
+.md-typeset ul li::before {
+  background-color: #A68959 !important;
+  color: #A68959 !important;
+}
+
+/* ── Links ─────────────────────────────────────────────────── */
+.md-typeset a {
+  color: #A68959 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(166,137,89,0.3) !important;
+  transition: color 0.2s ease, border-color 0.2s ease !important;
+}
+
+.md-typeset a:hover {
+  color: #C9A96E !important;
+  border-bottom-color: #C9A96E !important;
+}
+
+/* ── Code ──────────────────────────────────────────────────── */
+.md-typeset code {
+  background-color: rgba(166,137,89,0.1) !important;
+  color: #C9A96E !important;
+  border-radius: 0 !important;
+  padding: 2px 7px !important;
+  font-size: 0.85em !important;
+  border: 1px solid rgba(166,137,89,0.18) !important;
+}
+
+.md-typeset pre {
+  background-color: #1E2935 !important;
+  border: 1px solid rgba(166,137,89,0.2) !important;
+  border-left: 3px solid #A68959 !important;
+  border-radius: 0 !important;
+}
+
+.md-typeset pre code {
+  background: transparent !important;
+  border: none !important;
+  color: #E8E6E1 !important;
+  padding: 0 !important;
+}
+
+/* ── Blockquotes ───────────────────────────────────────────── */
+.md-typeset blockquote {
+  border-left: 3px solid #A68959 !important;
+  background: rgba(166,137,89,0.06) !important;
+  padding: 1rem 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  color: #B8C0CC !important;
+  font-style: italic !important;
+}
+
+/* ── Admonitions ───────────────────────────────────────────── */
+.md-typeset .admonition {
+  border-radius: 0 !important;
+  border-left: 3px solid #A68959 !important;
+  background-color: rgba(166,137,89,0.07) !important;
+}
+
+.md-typeset .admonition-title {
+  background-color: rgba(166,137,89,0.14) !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #A68959 !important;
+}
+
+/* ── Tables ────────────────────────────────────────────────── */
+.md-typeset table {
+  border: 1px solid rgba(166,137,89,0.2) !important;
+  border-collapse: collapse !important;
+}
+
+.md-typeset table th {
+  background-color: rgba(166,137,89,0.12) !important;
+  color: #A68959 !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  padding: 10px 16px !important;
+  border: 1px solid rgba(166,137,89,0.2) !important;
+}
+
+.md-typeset table td {
+  border: 1px solid rgba(166,137,89,0.12) !important;
+  color: #B8C0CC !important;
+  padding: 10px 16px !important;
+}
+
+.md-typeset table tr:hover td {
+  background-color: rgba(166,137,89,0.05) !important;
+}
+
+/* ── Search ────────────────────────────────────────────────── */
+.md-search__input {
+  background-color: #1E2935 !important;
+  border: 1px solid rgba(166,137,89,0.3) !important;
+  border-radius: 0 !important;
+  color: #E8E6E1 !important;
+}
+
+.md-search__input::placeholder {
+  color: #4A5568 !important;
+}
+
+/* ── Footer ────────────────────────────────────────────────── */
+.md-footer {
+  background-color: #18222C !important;
+  border-top: 1px solid rgba(166,137,89,0.25) !important;
+}
+
+.md-footer-meta {
+  background-color: #151E28 !important;
+}
+
+.md-footer__link {
+  color: #8892A4 !important;
+}
+
+.md-footer__link:hover {
+  color: #A68959 !important;
+}
+
+/* ── Back to top ───────────────────────────────────────────── */
+.md-top {
+  background-color: #A68959 !important;
+  color: #18222C !important;
+  border-radius: 0 !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.7rem !important;
+}
+
+/* ── Horizontal rule ───────────────────────────────────────── */
+.md-typeset hr {
+  border-color: rgba(166,137,89,0.2) !important;
+}
+
+/* ── Copy button — gold icon, gold checkmark on copy ───────── */
+.md-clipboard {
+  color: rgba(166,137,89,0.35) !important;
+  transition: color 0.2s ease !important;
+  position: relative !important;
+}
+
+.md-clipboard:hover {
+  color: #A68959 !important;
+}
+
+/* Hide the default white tooltip entirely */
+.md-tooltip,
+.md-tooltip--active {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Gold checkmark that floats up and fades after copying */
+.md-clipboard:focus::after,
+.md-clipboard:active::after {
+  content: "✓" !important;
+  position: absolute !important;
+  top: -28px !important;
+  right: 0 !important;
+  color: #A68959 !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  background: transparent !important;
+  animation: copied-flash 1.4s ease forwards !important;
+  pointer-events: none !important;
+}
+
+@keyframes copied-flash {
+  0%   { opacity: 0; transform: translateY(6px); }
+  15%  { opacity: 1; transform: translateY(0);   }
+  70%  { opacity: 1; transform: translateY(0);   }
+  100% { opacity: 0; transform: translateY(-6px);}
+}
+
+/* ── Selection ─────────────────────────────────────────────── */
+::selection {
+  background: #A68959 !important;
+  color: #18222C !important;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #18222C; }
+::-webkit-scrollbar-thumb { background: rgba(166,137,89,0.4); }
+::-webkit-scrollbar-thumb:hover { background: #A68959; }

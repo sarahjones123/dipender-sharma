@@ -1,0 +1,79 @@
+<svg width="100%" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: "DM Mono", "Courier New", monospace; }
+      .th { font-size: 14px; font-weight: 600; fill: #f0f2f5; }
+      .ts { font-size: 12px; font-weight: 400; fill: #a0b0c4; }
+      .axis-label { font-size: 11px; font-weight: 500; fill: #c9a84c; letter-spacing: 2px; font-family: monospace; }
+      .q-teal rect  { fill: #1a3a32; stroke: #1D9E75; }
+      .q-purple rect { fill: #2a2050; stroke: #7F77DD; }
+      .q-amber rect  { fill: #3a2800; stroke: #BA7517; }
+      .q-gray rect   { fill: #1e2d47; stroke: #5F5E5A; }
+      .q-teal .th   { fill: #9FE1CB; }
+      .q-purple .th { fill: #CECBF6; }
+      .q-amber .th  { fill: #FAC775; }
+      .q-gray .th   { fill: #D3D1C7; }
+      .q-teal .ts   { fill: #5DCAA5; }
+      .q-purple .ts { fill: #AFA9EC; }
+      .q-amber .ts  { fill: #EF9F27; }
+      .q-gray .ts   { fill: #888780; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="480" fill="#162035"/>
+
+  <!-- Axis labels: horizontal -->
+  <text class="axis-label" x="194" y="28" text-anchor="middle">PRACTICAL</text>
+  <text class="axis-label" x="484" y="28" text-anchor="middle">THEORETICAL</text>
+
+  <!-- Axis labels: vertical -->
+  <text class="axis-label" x="22" y="165" text-anchor="middle" transform="rotate(-90, 22, 165)">LEARNING</text>
+  <text class="axis-label" x="22" y="355" text-anchor="middle" transform="rotate(-90, 22, 355)">WORKING</text>
+
+  <!-- Axis lines -->
+  <line x1="50" y1="44" x2="630" y2="44" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+  <line x1="50" y1="44" x2="50" y2="450" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+  <line x1="340" y1="44" x2="340" y2="450" stroke="#c9a84c" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+  <line x1="50" y1="248" x2="630" y2="248" stroke="#c9a84c" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+
+  <!-- Quadrant 1: Tutorials (top-left) -->
+  <g class="q-teal">
+    <rect x="58" y="52" width="272" height="188" rx="4" stroke-width="0.5"/>
+    <text class="th" x="194" y="88" text-anchor="middle" dominant-baseline="central">Tutorials</text>
+    <text class="ts" x="194" y="112" text-anchor="middle" dominant-baseline="central">Learning-oriented</text>
+    <text class="ts" x="194" y="148" text-anchor="middle" dominant-baseline="central">Step-by-step, hands-on</text>
+    <text class="ts" x="194" y="168" text-anchor="middle" dominant-baseline="central">Goal: complete a first task</text>
+    <text class="ts" x="194" y="212" text-anchor="middle" dominant-baseline="central" font-style="italic" opacity="0.8">e.g. "Build your first API request"</text>
+  </g>
+
+  <!-- Quadrant 2: Concepts (top-right) -->
+  <g class="q-purple">
+    <rect x="348" y="52" width="272" height="188" rx="4" stroke-width="0.5"/>
+    <text class="th" x="484" y="88" text-anchor="middle" dominant-baseline="central">Concepts</text>
+    <text class="ts" x="484" y="112" text-anchor="middle" dominant-baseline="central">Understanding-oriented</text>
+    <text class="ts" x="484" y="148" text-anchor="middle" dominant-baseline="central">Explains the why and how</text>
+    <text class="ts" x="484" y="168" text-anchor="middle" dominant-baseline="central">Goal: build a mental model</text>
+    <text class="ts" x="484" y="212" text-anchor="middle" dominant-baseline="central" font-style="italic" opacity="0.8">e.g. "How authentication works"</text>
+  </g>
+
+  <!-- Quadrant 3: How-To Guides (bottom-left) -->
+  <g class="q-amber">
+    <rect x="58" y="256" width="272" height="188" rx="4" stroke-width="0.5"/>
+    <text class="th" x="194" y="292" text-anchor="middle" dominant-baseline="central">How-To Guides</text>
+    <text class="ts" x="194" y="316" text-anchor="middle" dominant-baseline="central">Task-oriented</text>
+    <text class="ts" x="194" y="352" text-anchor="middle" dominant-baseline="central">Assumes existing knowledge</text>
+    <text class="ts" x="194" y="372" text-anchor="middle" dominant-baseline="central">Goal: solve a specific problem</text>
+    <text class="ts" x="194" y="416" text-anchor="middle" dominant-baseline="central" font-style="italic" opacity="0.8">e.g. "Configure OAuth auth"</text>
+  </g>
+
+  <!-- Quadrant 4: Reference (bottom-right) -->
+  <g class="q-gray">
+    <rect x="348" y="256" width="272" height="188" rx="4" stroke-width="0.5"/>
+    <text class="th" x="484" y="292" text-anchor="middle" dominant-baseline="central">Reference</text>
+    <text class="ts" x="484" y="316" text-anchor="middle" dominant-baseline="central">Information-oriented</text>
+    <text class="ts" x="484" y="352" text-anchor="middle" dominant-baseline="central">Precise, complete, consulted</text>
+    <text class="ts" x="484" y="372" text-anchor="middle" dominant-baseline="central">Goal: find the exact detail</text>
+    <text class="ts" x="484" y="416" text-anchor="middle" dominant-baseline="central" font-style="italic" opacity="0.8">e.g. "API endpoints + parameters"</text>
+  </g>
+</svg>
