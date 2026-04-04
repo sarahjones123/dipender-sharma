@@ -1,4 +1,0 @@
-/* Right-align the top navigation tabs */
-.md-tabs__list {
-  justify-content: flex-end;
-}
