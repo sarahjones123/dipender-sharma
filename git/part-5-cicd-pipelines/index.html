@@ -12,11 +12,13 @@
         <meta name="author" content="Dipender Sharma">
       
       
-        <link rel="canonical" href="https://github.com/sarahjones123/dipender-sharma/api/generated/">
+        <link rel="canonical" href="https://github.com/sarahjones123/dipender-sharma/git/part-5-cicd-pipelines/">
       
       
-        <link rel="prev" href="../../automation/">
+        <link rel="prev" href="../part-4-pull-requests/">
       
+      
+        <link rel="next" href="../part-6-repo-architecture/">
       
       
         
@@ -27,7 +29,7 @@
     
     
       
-        <title>API Docs generated - Dipender Sharma- Senior Technical Writer</title>
+        <title>Part 5 — CI/CD Pipelines - Dipender Sharma- Senior Technical Writer</title>
       
     
     
@@ -82,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-endpoints" class="md-skip">
+        <a href="#part-5-cicd-for-technical-writers-how-documentation-goes-from-repository-to-live-site" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Docs generated
+              Part 5 — CI/CD Pipelines
             
           </span>
         </div>
@@ -248,11 +250,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../git/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -270,7 +274,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../../api/" class="md-tabs__link">
         
   
   
@@ -287,12 +291,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../../automation/" class="md-tabs__link">
           
   
@@ -475,26 +477,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -512,7 +519,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -530,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -558,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   
@@ -586,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/part-1-git-basics/" class="md-nav__link">
+      <a href="../part-1-git-basics/" class="md-nav__link">
         
   
   
@@ -614,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/part-2-git-vs-github/" class="md-nav__link">
+      <a href="../part-2-git-vs-github/" class="md-nav__link">
         
   
   
@@ -642,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/part-3-versioning/" class="md-nav__link">
+      <a href="../part-3-versioning/" class="md-nav__link">
         
   
   
@@ -670,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/part-4-pull-requests/" class="md-nav__link">
+      <a href="../part-4-pull-requests/" class="md-nav__link">
         
   
   
@@ -695,10 +702,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../git/part-5-cicd-pipelines/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 5 — CI/CD Pipelines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -714,6 +748,186 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-missing-step-between-merge-and-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Missing Step Between Merge and Production
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-docs-as-code-delivery-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Docs-as-Code Delivery Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-cicd-actually-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What CI/CD Actually Means
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-typical-documentation-deployment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Typical Documentation Deployment Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A Typical Documentation Deployment Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-the-merge-triggers-the-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1 — The Merge Triggers the Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-the-documentation-site-is-built" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2 — The Documentation Site Is Built
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-automated-validation-checks-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3 — Automated Validation Checks Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preview-deployments-seeing-documentation-before-it-goes-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview Deployments — Seeing Documentation Before It Goes Live
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staging-vs-production-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Staging vs Production Environments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-the-pipeline-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the Pipeline Fails
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-docs-as-code-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Complete Docs-as-Code Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-means-for-technical-writers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What This Means for Technical Writers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-in-this-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next in This Series
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -726,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/part-6-repo-architecture/" class="md-nav__link">
+      <a href="../part-6-repo-architecture/" class="md-nav__link">
         
   
   
@@ -761,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../api/" class="md-nav__link">
         
   
   
@@ -785,31 +999,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -827,7 +1036,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -870,37 +1079,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    API Docs generated
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../api/generated/" class="md-nav__link">
         
   
   
@@ -916,37 +1098,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#customers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        /customers
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -986,10 +1137,159 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#customers" class="md-nav__link">
+  <a href="#the-missing-step-between-merge-and-production" class="md-nav__link">
     <span class="md-ellipsis">
       
-        /customers
+        The Missing Step Between Merge and Production
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-docs-as-code-delivery-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Docs-as-Code Delivery Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-cicd-actually-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What CI/CD Actually Means
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-typical-documentation-deployment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Typical Documentation Deployment Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A Typical Documentation Deployment Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-the-merge-triggers-the-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1 — The Merge Triggers the Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-the-documentation-site-is-built" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2 — The Documentation Site Is Built
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-automated-validation-checks-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3 — Automated Validation Checks Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preview-deployments-seeing-documentation-before-it-goes-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview Deployments — Seeing Documentation Before It Goes Live
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staging-vs-production-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Staging vs Production Environments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-the-pipeline-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the Pipeline Fails
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-docs-as-code-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Complete Docs-as-Code Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-means-for-technical-writers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What This Means for Technical Writers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-in-this-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next in This Series
       
     </span>
   </a>
@@ -1016,12 +1316,309 @@
   
 
 
-<h1 id="api-endpoints">API Endpoints</h1>
-<h2 id="customers">/customers</h2>
+<h1 id="part-5-cicd-for-technical-writers-how-documentation-goes-from-repository-to-live-site">Part 5: CI/CD for Technical Writers — How Documentation Goes from Repository to Live Site</h1>
+<p>In Part 4, we examined how Pull Requests validate documentation state before it becomes authoritative.</p>
+<p>A Pull Request acts as a control gate. It determines whether a proposed documentation change is approved for production. But approval alone does not make documentation visible to users. Something still has to deliver it.</p>
+<p>That final step — moving validated documentation from the repository into a live environment — is handled by CI/CD pipelines.</p>
+<p>By the end of this article you will understand:</p>
 <ul>
-<li><strong>GET</strong>: Get customers</li>
-<li><strong>POST</strong>: Create customer</li>
+<li>What happens to documentation between a merge and a live site</li>
+<li>What CI and CD mean in the context of documentation delivery</li>
+<li>How each stage of a documentation pipeline works</li>
+<li>What preview deployments and staging environments are for</li>
+<li>How to interpret a pipeline failure and trace it back to its source</li>
 </ul>
+<hr />
+<h2 id="the-missing-step-between-merge-and-production">The Missing Step Between Merge and Production</h2>
+<p>When a Pull Request is merged into the primary branch, a new documentation state becomes authoritative inside the repository.</p>
+<p>But the repository itself is not what users read. Users read documentation hosted on a documentation website, a developer portal, a static documentation platform, or an internal knowledge base.</p>
+<p>For the repository version to appear there, something must:</p>
+<ol>
+<li>Detect that a new version exists</li>
+<li>Build the documentation site from source files</li>
+<li>Deploy it to the hosting environment</li>
+</ol>
+<p>This sequence is automated through <strong>Continuous Integration / Continuous Deployment</strong> — commonly referred to as CI/CD.</p>
+<hr />
+<h2 id="the-docs-as-code-delivery-pipeline">The Docs-as-Code Delivery Pipeline</h2>
+<p>The diagram below shows the complete lifecycle of documentation in a Docs-as-Code system — from the moment you start writing to the moment a user reads the result.</p>
+<p><img alt="The Docs-as-Code Delivery Pipeline showing seven stages: Write, Version, Validate, Build, Test, Deploy, and Live Site." src="../images/cicd-pipeline-diagram.png" /></p>
+<p>The pipeline has three distinct layers of responsibility:</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Stages</th>
+<th>Who is responsible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Human</strong></td>
+<td>Write, Version</td>
+<td>The technical writer — creation, intent, and commit history</td>
+</tr>
+<tr>
+<td><strong>Human + Machine</strong></td>
+<td>Validate</td>
+<td>Pull Request review combines human approval with automated checks</td>
+</tr>
+<tr>
+<td><strong>Machine</strong></td>
+<td>Build, Test, Deploy, Live Site</td>
+<td>The CI/CD pipeline — fully automated after merge</td>
+</tr>
+</tbody>
+</table>
+<p>Once a Pull Request is merged, the pipeline takes over completely. No manual publishing step is required.</p>
+<hr />
+<h2 id="what-cicd-actually-means">What CI/CD Actually Means</h2>
+<p><strong>Continuous Integration (CI)</strong> means changes are automatically built and tested as soon as they are merged. Problems are caught immediately rather than discovered after publication.</p>
+<p><strong>Continuous Deployment (CD)</strong> means a successfully built and tested version is automatically delivered to the live environment without manual intervention.</p>
+<p>For documentation, the pipeline performs three tasks in sequence:</p>
+<ol>
+<li><strong>Build</strong> — convert source Markdown files into a fully generated documentation site</li>
+<li><strong>Test</strong> — run automated checks to validate documentation quality</li>
+<li><strong>Deploy</strong> — publish the generated site to the hosting environment</li>
+</ol>
+<p>These three tasks run automatically after every merge to the primary branch.</p>
+<hr />
+<h2 id="a-typical-documentation-deployment-pipeline">A Typical Documentation Deployment Pipeline</h2>
+<p>Most Docs-as-Code systems follow this sequence:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Commit → Pull Request → Merge → CI Pipeline Triggered → Build → Test → Deploy → Live Site
+</code></pre></div>
+<hr />
+<h3 id="stage-1-the-merge-triggers-the-pipeline">Stage 1 — The Merge Triggers the Pipeline</h3>
+<p>When a Pull Request is merged into the primary branch — <code>main</code> in modern repositories, <code>master</code> in older ones — GitHub detects the change and starts the automated workflow.</p>
+<blockquote>
+<p><strong>Note:</strong> <code>main</code> and <code>master</code> refer to the same concept: the primary branch of a repository. GitHub changed its default from <code>master</code> to <code>main</code> in 2020. You may encounter either name depending on when a repository was created.</p>
+</blockquote>
+<p>The workflow is defined in a configuration file stored inside the repository itself. In GitHub, this file lives at:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>.github/workflows/deploy-docs.yml
+</code></pre></div>
+<blockquote>
+<p><strong>What this file is:</strong> A YAML configuration file that tells GitHub Actions what to do and when to do it. In most teams, this file is created and maintained by a developer or DevOps engineer — technical writers are not expected to write it from scratch, but understanding its structure helps you read pipeline logs and collaborate more effectively when something goes wrong.</p>
+</blockquote>
+<p><strong>Example trigger configuration:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Start the pipeline whenever the main branch is updated</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+</code></pre></div>
+<p>Whenever a change is merged into <code>main</code>, this trigger fires and the pipeline begins. The merge is the signal that a new documentation state is ready to be built.</p>
+<hr />
+<h3 id="stage-2-the-documentation-site-is-built">Stage 2 — The Documentation Site Is Built</h3>
+<p>Most Docs-as-Code systems use <strong>static site generators</strong> — tools that convert Markdown source files into a fully built website with HTML pages, navigation, search indexes, and static assets.</p>
+<p>Common static site generators used for documentation:</p>
+<table>
+<thead>
+<tr>
+<th>Generator</th>
+<th>Common use case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MkDocs</td>
+<td>Technical and API documentation</td>
+</tr>
+<tr>
+<td>Docusaurus</td>
+<td>Developer documentation portals</td>
+</tr>
+<tr>
+<td>Sphinx</td>
+<td>Python project documentation</td>
+</tr>
+<tr>
+<td>Hugo</td>
+<td>General documentation sites</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example build step:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build Documentation</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs build</span>
+</code></pre></div>
+<p>If the build fails — for example, because a referenced file is missing or a navigation configuration is invalid — the pipeline stops immediately. Nothing is deployed until the problem is resolved.</p>
+<hr />
+<h3 id="stage-3-automated-validation-checks-run">Stage 3 — Automated Validation Checks Run</h3>
+<p>Before deployment, the pipeline runs automated checks to enforce documentation quality.</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>What it catches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Link validation</td>
+<td>Broken internal and external links</td>
+</tr>
+<tr>
+<td>Markdown linting</td>
+<td>Formatting and style inconsistencies</td>
+</tr>
+<tr>
+<td>Spellchecking</td>
+<td>Spelling errors across all files</td>
+</tr>
+<tr>
+<td>Build integrity</td>
+<td>Warnings that indicate structural problems</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example — strict build mode:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build Documentation (strict mode)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs build --strict</span>
+</code></pre></div>
+<p>The <code>--strict</code> flag treats warnings as errors — if any warning occurs during the build, the pipeline fails and deployment stops. This makes documentation quality enforceable at the repository level rather than dependent on manual review.</p>
+<p>If any check fails, the pipeline halts and a failed status appears on the Pull Request. The pipeline resumes only after the issue is corrected and a new commit is pushed.</p>
+<hr />
+<h2 id="preview-deployments-seeing-documentation-before-it-goes-live">Preview Deployments — Seeing Documentation Before It Goes Live</h2>
+<p>Many CI/CD platforms — including Netlify, Vercel, and GitHub Actions — automatically generate a temporary preview site for every Pull Request before it is merged.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Open PR → Pipeline runs → Preview URL generated → Reviewers check rendered site
+</code></pre></div>
+<p>Preview deployments allow writers and reviewers to see exactly how documentation will render in a browser before any change goes live. This catches problems that are invisible in raw Markdown:</p>
+<ul>
+<li>Navigation structure issues</li>
+<li>Image rendering failures</li>
+<li>Formatting inconsistencies across pages</li>
+<li>Layout problems at different screen sizes</li>
+</ul>
+<p>Reviewing a rendered preview is more accurate than reviewing Markdown source because it replicates the actual user experience.</p>
+<hr />
+<h2 id="staging-vs-production-environments">Staging vs Production Environments</h2>
+<p>Some documentation teams add an intermediate step between validation and public publication.</p>
+<p>Rather than deploying directly to the public-facing site, the pipeline first deploys to a <strong>staging environment</strong> — a private, internal copy of the documentation that mirrors what production will look like.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Merge → Build → Test → Staging Site → Internal review → Production Site
+</code></pre></div>
+<p>Staging is most useful when:</p>
+<ul>
+<li>Documentation changes are large or structurally significant</li>
+<li>Multiple stakeholders need to review before publication</li>
+<li>Changes must be coordinated with a specific product release date</li>
+</ul>
+<p>When internal review is complete, a second pipeline step promotes the staging version to production. No manual file transfer is involved — the pipeline handles both deployments.</p>
+<hr />
+<h2 id="when-the-pipeline-fails">When the Pipeline Fails</h2>
+<p>For most technical writers, the first direct interaction with CI/CD happens when the pipeline fails. On GitHub, a failed pipeline appears as a red ✗ next to a commit or on a Pull Request.</p>
+<p><strong>How to investigate a pipeline failure:</strong></p>
+<ol>
+<li>Click <strong>Details</strong> next to the failed check</li>
+<li>Open the build logs</li>
+<li>Read the error message — it will identify the file and the line number where the problem occurred</li>
+<li>Fix the issue locally, commit the correction, and push — the pipeline runs again automatically</li>
+</ol>
+<p><strong>Common causes of documentation pipeline failures:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Error type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Broken internal link</td>
+<td><code>docs/api/authentication.md line 42: target not found</code></td>
+</tr>
+<tr>
+<td>Missing file</td>
+<td><code>image referenced in index.md not found</code></td>
+</tr>
+<tr>
+<td>Invalid Markdown</td>
+<td><code>unexpected heading level</code></td>
+</tr>
+<tr>
+<td>Navigation config error</td>
+<td><code>mkdocs.yml: page listed but file missing</code></td>
+</tr>
+</tbody>
+</table>
+<p>You do not need to understand the entire pipeline to resolve most failures. You need to find the error message, trace it to the source file, and fix the specific problem it identifies. Pipeline logs are written to be read — even by non-engineers.</p>
+<hr />
+<h2 id="the-complete-docs-as-code-lifecycle">The Complete Docs-as-Code Lifecycle</h2>
+<p>At this point in the series, the full structure is visible:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>System</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Writing</td>
+<td>Markdown</td>
+<td>Human — creation and judgement</td>
+</tr>
+<tr>
+<td>Versioning</td>
+<td>Git</td>
+<td>Human — intent and history</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>Pull Request</td>
+<td>Human + Machine — review and automated checks</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>CI Pipeline</td>
+<td>Machine — compilation</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>CI Pipeline</td>
+<td>Machine — quality enforcement</td>
+</tr>
+<tr>
+<td>Deploy</td>
+<td>CD Pipeline</td>
+<td>Machine — delivery</td>
+</tr>
+<tr>
+<td>Live Site</td>
+<td>Hosting platform</td>
+<td>Machine — availability</td>
+</tr>
+</tbody>
+</table>
+<p>Each layer adds a specific kind of structure. Together they form a complete, auditable documentation delivery system.</p>
+<hr />
+<h2 id="what-this-means-for-technical-writers">What This Means for Technical Writers</h2>
+<p>Understanding CI/CD is not about learning DevOps — it is about understanding the system your work moves through.</p>
+<p>In a Docs-as-Code environment:</p>
+<ul>
+<li>Your writing creates a documentation state</li>
+<li>Git records that state with full history and attribution</li>
+<li>Pull Requests validate that state before it advances</li>
+<li>CI/CD pipelines deliver that state to users automatically</li>
+</ul>
+<p>You are not simply updating documents. You are contributing to a controlled production system — the same kind of system that engineers use to ship code. Understanding that system makes collaboration with engineering teams significantly more effective. You can read a pipeline log, understand why a check failed, interpret a preview deployment, and contribute to conversations about documentation infrastructure.</p>
+<p>That shared understanding is one of the most valuable capabilities a technical writer brings to a product team.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The repository is not what users read — CI/CD is the system that moves documentation from repository to live site</li>
+<li><strong>CI</strong> builds and tests documentation automatically after every merge; <strong>CD</strong> deploys it to the live environment without manual steps</li>
+<li>The pipeline sequence is: <strong>Merge → Build → Test → Deploy → Live Site</strong></li>
+<li>Workflow configuration lives in <code>.github/workflows/deploy-docs.yml</code> — a YAML file maintained by your team's engineering or DevOps function</li>
+<li><strong>Preview deployments</strong> generate a temporary rendered site for every PR, allowing reviewers to evaluate the actual documentation experience before merge</li>
+<li><strong>Staging environments</strong> add a private review step between validation and public publication</li>
+<li>Pipeline failures appear as a red ✗ — click Details, read the log, find the file and line number, fix and push</li>
+<li>The <code>--strict</code> build flag makes documentation quality enforceable at the pipeline level</li>
+</ul>
+<hr />
+<h2 id="next-in-this-series">Next in This Series</h2>
+<p>→ <a href="../part-6-repo-architecture/">Part 6 — Documentation Repository Architecture: Structuring Docs That Scale</a></p>
+<hr />
 
 
 
